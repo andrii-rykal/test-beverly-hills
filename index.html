@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="Page">
+    <header class="Page__header Header">
+      <div class="Header__container">
+        <div class="Header__info">
+          <img class="Header__logo" src="images/logo-min.png" alt="logo" />
+          <a href="#menu">
+            <img src="images/icon_menu.svg" alt="icon open menu" />
+          </a>
+          <div class="Header__contacts">
+            <div class="Header__contacts-info">
+              <a
+                href="https://maps.app.goo.gl/QNiVDepoNH4Xd8X76"
+                target="_blank"
+                class="Header__link"
+              >
+                <img
+                  class="Header__link-map"
+                  src="images/icon_map.svg"
+                  alt="icon map"
+                />
+                <span class="Header__link-text"
+                  >г. Харьков, ул. Мироносицкая 10</span
+                >
+              </a>
+              <a href="tel:+380999908100" class="Header__link">
+                <img
+                  class="Header__link-tel"
+                  src="images/icon_tel.svg"
+                  alt="icon phone"
+                />
+                <span class="Header__link-text"
+                  >+38 (099) 990-81-00 (viber, telegram)</span
+                >
+              </a>
+            </div>
+            <div class="Header__contacts-social">
+              <a href="" class="Header__link">
+                <img
+                  class="Header__link-soc"
+                  src="images/icon_face.svg"
+                  alt="icon facebook"
+                />
+              </a>
+              <a href="" class="Header__link">
+                <img
+                  class="Header__link-soc"
+                  src="images/icon_insta.svg"
+                  alt="icon instagram"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="Header__nav">
+          <ul class="Header__nav-list">
+            <li class="Header__nav-item">
+              <a href="" class="Header__nav-link">Главная</a>
+            </li>
+            <li class="Header__nav-item">
+              <a href="" class="Header__nav-link">
+                Туры
+                <img src="images/arrow_down.svg" alt="" />
+              </a>
+            </li>
+            <li class="Header__nav-item">
+              <a href="" class="Header__nav-link">Страны</a>
+            </li>
+            <li class="Header__nav-item">
+              <a href="" class="Header__nav-link">
+                Услуги
+                <img src="images/arrow_down.svg" alt="" />
+              </a>
+            </li>
+            <li class="Header__nav-item">
+              <a href="" class="Header__nav-link">О компании</a>
+            </li>
+            <li class="Header__nav-item">
+              <a href="" class="Header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="Order">
+        <h2 class="Order__title">
+          Лучшие предложения по солнечному Египту из Харькова
+        </h2>
+        <button class="Button">Получить предложение</button>
+      </div>
+
+      <div class="Markers">
+        <div class="Markers__dot"></div>
+        <div class="Markers__dot"></div>
+        <div class="Markers__dot"></div>
+      </div>
+    </header>
+
+    <div class="Page__menu Menu" id="menu">
+      <a class="Menu__close" href="#">
+        <img src="images/icon_close_menu.svg" alt="icon open menu" />
+      </a>
+      <nav class="Menu__nav">
+        <ul class="Menu__nav-list">
+          <li class="Menu__nav-item">
+            <a href="/" class="Menu__nav-link">Главная</a>
+          </li>
+          <li class="Menu__nav-item">
+            <a href="/" class="Menu__nav-link"> Туры </a>
+
+            <ul class="Menu__tours">
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link">Горящие туры</a>
+              </li>
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link">Поиск тура</a>
+              </li>
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link">Туры по Украине</a>
+              </li>
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link">Экскурсионные туры</a>
+              </li>
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link">Week end туры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="Menu__nav-item">
+            <a href="/" class="Menu__nav-link">Страны</a>
+          </li>
+          <li class="Menu__nav-item">
+            <a href="/" class="Menu__nav-link"> Услуги </a>
+
+            <ul class="Menu__tours">
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link">Авиабилеты</a>
+              </li>
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link">Визовая поддержка</a>
+              </li>
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link">Индивидуальный трансфер</a>
+              </li>
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link">Подарочные сертификаты</a>
+              </li>
+
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link"
+                  >Бронирование отелей и апартаментов</a
+                >
+              </li>
+              <li class="Menu__tours-item">
+                <a href="/" class="Menu__tours-link"
+                  >Как забронировать и оплатить тур</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="Menu__nav-item">
+            <a href="/" class="Menu__nav-link">О компании</a>
+          </li>
+          <li class="Menu__nav-item">
+            <a href="/" class="Menu__nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="Menu__contacts">
+        <div class="Menu__contacts-info">
+          <a
+            href="https://maps.app.goo.gl/QNiVDepoNH4Xd8X76"
+            target="_blank"
+            class="Menu__contacts-link"
+          >
+            <img
+              class="Menu__contacts-link-map"
+              src="images/icon_map.svg"
+              alt="icon map"
+            />
+            <span class="Menu__contacts-link-text"
+              >г. Харьков, ул. Мироносицкая 10</span
+            >
+          </a>
+          <a href="tel:+380999908100" class="Menu__contacts-link">
+            <img
+              class="Menu__contacts-link-tel"
+              src="images/icon_tel.svg"
+              alt="icon phone"
+            />
+            <span class="Menu__contacts-link-text"
+              >+38 (099) 990-81-00 (viber, telegram)</span
+            >
+          </a>
+        </div>
+        <div class="Menu__contacts-social">
+          <a href="/" class="Menu__contacts-link">
+            <img
+              class="Menu__contacts-link-soc"
+              src="images/icon_face.svg"
+              alt="icon facebook"
+            />
+          </a>
+          <a href="/" class="Menu__contacts-link">
+            <img
+              class="Menu__contacts-link-soc"
+              src="images/icon_insta.svg"
+              alt="icon instagram"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main class="Page__main">
+      <section class="Page__offers Offers">
+        <div class="Offers__filter">
+          <a href="/" class="Offers__filter-link">Горящие туры</a>
+          <a href="/" class="Offers__filter-link">Популярные туры</a>
+        </div>
+
+        <div class="Offers__slider">
+          <div class="Slider">
+            <div class="Slider__arrow-left">
+              <img src="images/arrow_big_left.svg" alt="" />
+            </div>
+            <div class="Slider__arrow-right">
+              <img src="images/arrow_big_right.svg" alt="" />
+            </div>
+            <div class="Card Slider__card">
+              <div class="Card__photo">
+                <img src="images/photo1.png" alt="" />
+              </div>
+              <div class="Card__info">
+                <h3 class="Card__title">8 марта в Cyrene Sharm hotel</h3>
+                <p class="Card__duratin">(12.03.2018 — 19.03.2018)</p>
+                <hr />
+                <p class="Card__conditions">
+                  Перелёт, питание по системе all inclusive, трансфер
+                </p>
+                <div class="Card__price-box">
+                  <p class="Card__price">1259 грн</p>
+                  <p class="Card__amount">/за 1 человека</p>
+                </div>
+                <a href="/" class="Card__more">
+                  <img
+                    src="images/arrow_right.svg"
+                    alt=""
+                    class="Card__arrow"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="Card Slider__card">
+              <div class="Card__photo">
+                <img src="images/photo2.png" alt="" />
+              </div>
+              <div class="Card__info">
+                <h3 class="Card__title">8 марта в Cyrene Sharm hotel</h3>
+                <p class="Card__duratin">(12.03.2018 — 19.03.2018)</p>
+                <hr />
+                <p class="Card__conditions">
+                  Перелёт, питание по системе all inclusive, трансфер
+                </p>
+                <div class="Card__price-box">
+                  <p class="Card__price">1259 грн</p>
+                  <p class="Card__amount">/за 1 человека</p>
+                </div>
+                <a href="/" class="Card__more">
+                  <img
+                    src="images/arrow_right.svg"
+                    alt=""
+                    class="Card__arrow"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="Card Slider__card">
+              <div class="Card__photo">
+                <img src="images/photo2.png" alt="" />
+              </div>
+              <div class="Card__info">
+                <h3 class="Card__title">8 марта в Cyrene Sharm hotel</h3>
+                <p class="Card__duratin">(12.03.2018 — 19.03.2018)</p>
+                <hr />
+                <p class="Card__conditions">
+                  Перелёт, питание по системе all inclusive, трансфер
+                </p>
+                <div class="Card__price-box">
+                  <p class="Card__price">1259 грн</p>
+                  <p class="Card__amount">/за 1 человека</p>
+                </div>
+                <a href="/" class="Card__more">
+                  <img
+                    src="images/arrow_right.svg"
+                    alt=""
+                    class="Card__arrow"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Page__advantages Advantages">
+        <div class="Advantages__container">
+          <h2 class="Advantages__title">Наши преимущества</h2>
+          <div class="Advantages__content">
+            <img
+              src="images/advang_photo.png"
+              alt=""
+              class="Advantages__photo"
+            />
+            <p class="Advantages__text">
+              Очень долго подбирали разные варианты для того, чтобы
+              отпраздновать свой юбилейный День рождения в путешествии и не
+              могли определиться... Решили обратиться за помощью в турагенство.
+              Гульнара, выслушав все пожелания, предложила отдых в Турции, отель
+              Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень
+              благодарны ей за предложенный вариант!!!! Отдых получился
+              отличный! Отель с большой ухоженной территорией, внимательный
+              обслуживающий персонал. Отличный номер с видом на море.
+            </p>
+            <div class="Advantages__line-box">
+              <div class="Advantages__circle"></div>
+              <div class="Advantages__line"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Question">
+        <div class="Question__container">
+          <h2 class="Question__title">Хочу предложение по туру</h2>
+          <form action="#" class="Question__form">
+            <input
+              class="Question__input"
+              type="text"
+              name="name"
+              placeholder="Имя"
+              required
+            />
+            <input
+              class="Question__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              class="Question__input"
+              type="tel"
+              name="phone"
+              placeholder="Телефон"
+              required
+            />
+
+            <select name="country" class="Question__country" required>
+              <option value="0" selected disabled>Страна тура</option>
+              <option value="turkey">Турция</option>
+              <option value="egypt">Египет</option>
+              <option value="sri Lanka">Шри-Ланка</option>
+              <option value="dominican">Доминикана</option>
+            </select>
+
+            <button type="submit" class="Button">Получить предложение</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="Page__footer Footer"></footer>
+  </body>
+</html>

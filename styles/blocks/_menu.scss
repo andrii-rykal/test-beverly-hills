@@ -1,0 +1,101 @@
+.Menu {
+  padding-bottom: 40px;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $colorYellow;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+
+  &:target {
+    transform: translateX(0);
+  }
+
+  &__nav {
+    margin-bottom: 30px;
+    &-link {
+      text-decoration: none;
+      color: inherit;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & img {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__close {
+    display: block;
+    padding: 25px 20px;
+    text-align: right;
+  }
+
+  &__tours {
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 10px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    &-link {
+      text-decoration: none;
+  
+      &-text {
+        color: #fff;
+        opacity: 0.8;
+        font-size: 10px;
+      }
+  
+      &-map {
+        width: 8px;
+      }
+      &-tel {
+        width: 10px;
+      }
+      &-soc {
+        width: 12px;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &-social {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}

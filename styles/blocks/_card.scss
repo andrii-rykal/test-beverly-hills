@@ -1,0 +1,56 @@
+.Card {
+  background-color: #f8f7f7;
+  &__photo {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__duratin {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(58, 58, 58);
+  }
+  &__conditions {
+    color: rgb(58, 58, 58);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__price-box {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  &__price {
+    font-weight: bold;
+  }
+  &__amount {
+    color: rgb(138, 138, 138);
+    font-size: 8px;
+  }
+  &__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: $colorYellow;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+  }
+  &__arrow {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+
+
+
+

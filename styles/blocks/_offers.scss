@@ -1,0 +1,26 @@
+.Offers {
+  &__filter {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &-link {
+      text-decoration: none;
+      color: inherit;
+      font-size: 14px;
+      font-weight: bold;
+
+      &:first-child {
+        color: $colorYellow;
+      }
+    }
+  }
+
+  &__slider {
+    padding: 0 40px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+}

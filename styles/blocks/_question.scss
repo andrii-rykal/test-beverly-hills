@@ -1,0 +1,60 @@
+.Question {
+  background-image: url(../../images/offer_bg.png);
+
+  &__container {
+    padding: 20px 20px;
+
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  &__title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: $colorTextWhite;
+  }
+  &__input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    width: 200px;
+    outline: none;
+    color: $colorTextWhite;
+    
+    &::placeholder {
+      color: $colorTextWhite;
+      font-family: inherit;
+      opacity: 0.7;
+    }
+  }
+
+  &__country {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: $colorTextWhite;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    opacity: 0.7;
+    margin-bottom: 30px;
+
+    & option {
+      color: #000;
+    }
+    & option:checked {
+      color: $colorYellow;
+      
+    }
+  }
+}
+
+
+
+
+
+
