@@ -36,7 +36,7 @@ h3 {
 }
 
 .Header {
-  background-image: url(../../images/Header_banner.jpg);
+  background-image: url(../images/Header_banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -668,7 +668,7 @@ h3 {
 }
 
 .Question {
-  background-image: url(../../images/offer_bg.png);
+  background-image: url(../images/offer_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
