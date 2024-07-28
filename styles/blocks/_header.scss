@@ -3,41 +3,81 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding: 10px 20px 20px;
+
+  &__order {
+    margin-bottom: 70px;
+    margin-left: -20px;
+
+    @include on-desktop {
+      margin-bottom: 130px;
+    }
+  }
+ 
 
   &__info {
+    grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     margin-bottom: 30px;
+
+    @include on-tablet {
+      margin: 0;
+    }
+
+    &-menu {
+      @include on-tablet {
+        display: none;
+      }
+    }
   }
 
   &__logo {
-    width: 60px; // 92
+    width: 60px;
+
+    @include on-tablet {
+      width: 75px;
+    }
+
+    @include on-desktop {
+      width: 92px;
+    }
   }
 
   &__container {
-    padding: 10px 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @include on-tablet {
+      @include grid;
+    }
   }
 
   &__contacts {
     display: none;
-    gap: 10px;
+    gap: 60px;
     align-items: center;
-    justify-content: flex-end;
+
+    @include on-tablet {
+      display: flex;
+    }
 
     &-info {
       display: flex;
-      flex-direction: column;
       font-size: 10px;
       color: #fff;
       opacity: 0.8;
+      gap: 40px;
     }
 
     &-social {
       display: flex;
       gap: 10px;
+
+      @include on-desktop {
+        gap: 24px;
+      }
     }
   }
 
@@ -47,16 +87,29 @@
     &-text {
       color: #fff;
       opacity: 0.8;
+      font-size: 14px;
     }
 
     &-map {
-      width: 8px; // 13
+      width: 8px;
+
+      @include on-desktop {
+        width: 13px;
+      }
     }
     &-tel {
-      width: 10px; // 17
+      width: 10px;
+
+      @include on-desktop {
+        width: 17px;
+      }
     }
     &-soc {
       width: 12px; // 22
+
+      @include on-desktop {
+        width: 22px;
+      }
     }
   }
 
@@ -64,18 +117,85 @@
     display: none;
     background-color: $colorYellow;
     border-radius: 10px;
+    grid-column: 4 / -1;
+    position: relative;
+    bottom: 40px;
+    margin-bottom: 160px;
+
+    @include on-tablet {
+      display: block;
+    }
+
+    @include on-desktop {
+      grid-column: 5 / -1;
+      margin-bottom: 180px;
+    }
 
     &-list {
+      padding: 0 30px;
       list-style-type: none;
       display: flex;
-      // flex-direction: column;
-      gap: 10px;
+      justify-content: space-between;   
+    }
+    &-item {
+      position: relative;
+      padding: 10px;
+
+      @include on-desktop {
+        padding: 16px 0 20px;
+      }
     }
     &-link {
       text-decoration: none;
-      font-size: 18px;
+      font-size: 12px;
       color: #000;
       font-weight: bold;
+
+      @include on-desktop {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__tours {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 40px;
+
+    background-color: rgba(50, 132, 185, 0.8);
+    list-style-type: none;
+    padding: 10px 20px;
+
+    
+    @include on-desktop {
+      top: 55px;
+      padding: 20px 30px;
+    }
+
+    &--left {
+      left: -30px;
+    }
+    &--right {
+      left: -30px;
+      width: 250%;
+
+      
+      @include on-desktop {
+        width: 300%;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      font-size: 12px;
+
+      
+      @include on-desktop {
+        font-size: 14px;
+      }
     }
   }
 }

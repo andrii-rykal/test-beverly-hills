@@ -1,0 +1,14 @@
+.Page {
+  &--with-menu {
+    overflow: hidden;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+
+    @include on-desktop {
+      margin-bottom: 70px;
+    }
+  }
+  
+}

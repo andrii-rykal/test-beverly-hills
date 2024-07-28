@@ -5,4 +5,9 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+
+  @include on-desktop {
+    font-size: 18px;
+    padding: 16px 32px;
+  }
 }

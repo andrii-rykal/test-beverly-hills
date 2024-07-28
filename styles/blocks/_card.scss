@@ -1,15 +1,40 @@
 .Card {
   background-color: #f8f7f7;
+
+  @include on-desktop {
+    display: flex;
+    gap: 30px;
+  }
   &__photo {
     text-align: center;
     margin-bottom: 15px;
+
+    @include on-desktop {
+      width: 100%;
+      margin: 0;
+    }
   }
   &__title {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     text-align: center;
+
+    @include on-desktop {
+      width: max-content;
+      margin-bottom: 8px;
+      padding-right: 30px;
+    }
   }
-  &__duratin {
+
+  &__info {
+    & hr {
+      opacity: 0.1;
+    }
+
+    @include on-desktop {
+    }
+  }
+  &__duration {
     font-size: 12px;
     text-align: center;
     color: rgb(58, 58, 58);
@@ -19,6 +44,11 @@
     font-size: 14px;
     text-align: center;
     margin-bottom: 10px;
+
+    @include on-desktop {
+      margin-bottom: 24px;
+      text-align: left;
+    }
   }
   &__price-box {
     display: flex;
@@ -27,10 +57,18 @@
   }
   &__price {
     font-weight: bold;
+
+    @include on-desktop {
+      font-size: 20px;
+    }
   }
   &__amount {
     color: rgb(138, 138, 138);
     font-size: 8px;
+    
+    @include on-desktop {
+      font-size: 11px;
+    }
   }
   &__more {
     display: flex;
@@ -43,10 +81,20 @@
     position: absolute;
     right: 20px;
     bottom: 10px;
+
+    @include on-desktop {
+      width: 37px;
+      height: 37px;
+    }
   }
   &__arrow {
     width: 8px;
     height: 8px;
+
+    @include on-desktop {
+      width: 6px;
+      height: 12px;
+    }
   }
 }
 

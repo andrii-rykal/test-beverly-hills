@@ -6,11 +6,23 @@
     align-items: center;
     margin-bottom: 20px;
 
+    @include on-desktop {
+      justify-content: flex-start;
+      max-width: 1140px;
+      margin: 0 auto 70px;
+      gap: 32px;
+    }
+
+  
     &-link {
       text-decoration: none;
       color: inherit;
       font-size: 14px;
       font-weight: bold;
+
+      @include on-desktop {
+        font-size: 20px;
+      }
 
       &:first-child {
         color: $colorYellow;
@@ -22,5 +34,9 @@
     padding: 0 40px;
     position: relative;
     margin-bottom: 50px;
+
+    @include on-desktop {
+      margin-bottom: 80px;
+    }
   }
 }

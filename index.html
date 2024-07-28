@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <title>Document</title>
   </head>
   <body class="Page">
@@ -12,7 +13,11 @@
         <div class="Header__info">
           <img class="Header__logo" src="images/logo-min.png" alt="logo" />
           <a href="#menu">
-            <img src="images/icon_menu.svg" alt="icon open menu" />
+            <img
+              class="Header__info-menu"
+              src="images/icon_menu.svg"
+              alt="icon open menu"
+            />
           </a>
           <div class="Header__contacts">
             <div class="Header__contacts-info">
@@ -66,10 +71,27 @@
               <a href="" class="Header__nav-link">Главная</a>
             </li>
             <li class="Header__nav-item">
-              <a href="" class="Header__nav-link">
+              <a href="" class="Header__nav-link Header__nav-link--tours">
                 Туры
                 <img src="images/arrow_down.svg" alt="" />
               </a>
+              <ul class="Header__tours Header__tours--left">
+                <li class="Header__tours-item">
+                  <a href="" class="Header__tours-link"> Горящие туры </a>
+                </li>
+                <li class="Header__tours-item">
+                  <a href="" class="Header__tours-link"> Поиск тура </a>
+                </li>
+                <li class="Header__tours-item">
+                  <a href="" class="Header__tours-link"> Туры по Украине </a>
+                </li>
+                <li class="Header__tours-item">
+                  <a href="" class="Header__tours-link"> Экскурсионные туры </a>
+                </li>
+                <li class="Header__tours-item">
+                  <a href="" class="Header__tours-link">Week end туры</a>
+                </li>
+              </ul>
             </li>
             <li class="Header__nav-item">
               <a href="" class="Header__nav-link">Страны</a>
@@ -79,6 +101,36 @@
                 Услуги
                 <img src="images/arrow_down.svg" alt="" />
               </a>
+
+              <ul class="Header__tours Header__tours--right">
+                <li class="Header__tours-item">
+                  <a href="/" class="Header__tours-link">Авиабилеты</a>
+                </li>
+                <li class="Header__tours-item">
+                  <a href="/" class="Header__tours-link">Визовая поддержка</a>
+                </li>
+                <li class="Header__tours-item">
+                  <a href="/" class="Header__tours-link"
+                    >Индивидуальный трансфер</a
+                  >
+                </li>
+                <li class="Header__tours-item">
+                  <a href="/" class="Header__tours-link"
+                    >Подарочные сертификаты</a
+                  >
+                </li>
+
+                <li class="Header__tours-item">
+                  <a href="/" class="Header__tours-link"
+                    >Бронирование отелей и апартаментов</a
+                  >
+                </li>
+                <li class="Header__tours-item">
+                  <a href="/" class="Header__tours-link"
+                    >Как забронировать и оплатить тур</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="Header__nav-item">
               <a href="" class="Header__nav-link">О компании</a>
@@ -90,7 +142,7 @@
         </nav>
       </div>
 
-      <div class="Order">
+      <div class="Order Header__order">
         <h2 class="Order__title">
           Лучшие предложения по солнечному Египту из Харькова
         </h2>
@@ -242,7 +294,7 @@
               </div>
               <div class="Card__info">
                 <h3 class="Card__title">8 марта в Cyrene Sharm hotel</h3>
-                <p class="Card__duratin">(12.03.2018 — 19.03.2018)</p>
+                <p class="Card__duration">(12.03.2018 — 19.03.2018)</p>
                 <hr />
                 <p class="Card__conditions">
                   Перелёт, питание по системе all inclusive, трансфер
@@ -266,10 +318,11 @@
               </div>
               <div class="Card__info">
                 <h3 class="Card__title">8 марта в Cyrene Sharm hotel</h3>
-                <p class="Card__duratin">(12.03.2018 — 19.03.2018)</p>
+                <p class="Card__duration">(12.03.2018 — 19.03.2018)</p>
                 <hr />
                 <p class="Card__conditions">
-                  Перелёт, питание по системе all inclusive, трансфер
+                  <span>Перелёт, питание по системе all inclusive,</span>
+                  трансфер
                 </p>
                 <div class="Card__price-box">
                   <p class="Card__price">1259 грн</p>
@@ -290,7 +343,7 @@
               </div>
               <div class="Card__info">
                 <h3 class="Card__title">8 марта в Cyrene Sharm hotel</h3>
-                <p class="Card__duratin">(12.03.2018 — 19.03.2018)</p>
+                <p class="Card__duration">(12.03.2018 — 19.03.2018)</p>
                 <hr />
                 <p class="Card__conditions">
                   Перелёт, питание по системе all inclusive, трансфер
@@ -315,26 +368,20 @@
       <section class="Page__advantages Advantages">
         <div class="Advantages__container">
           <h2 class="Advantages__title">Наши преимущества</h2>
-          <div class="Advantages__content">
-            <img
-              src="images/advang_photo.png"
-              alt=""
-              class="Advantages__photo"
-            />
-            <p class="Advantages__text">
-              Очень долго подбирали разные варианты для того, чтобы
-              отпраздновать свой юбилейный День рождения в путешествии и не
-              могли определиться... Решили обратиться за помощью в турагенство.
-              Гульнара, выслушав все пожелания, предложила отдых в Турции, отель
-              Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень
-              благодарны ей за предложенный вариант!!!! Отдых получился
-              отличный! Отель с большой ухоженной территорией, внимательный
-              обслуживающий персонал. Отличный номер с видом на море.
-            </p>
-            <div class="Advantages__line-box">
-              <div class="Advantages__circle"></div>
-              <div class="Advantages__line"></div>
-            </div>
+          <img src="images/advang_photo.png" alt="" class="Advantages__photo" />
+          <p class="Advantages__text">
+            Очень долго подбирали разные варианты для того, чтобы отпраздновать
+            свой юбилейный День рождения в путешествии и не могли
+            определиться... Решили обратиться за помощью в турагенство.
+            Гульнара, выслушав все пожелания, предложила отдых в Турции, отель
+            Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень
+            благодарны ей за предложенный вариант!!!! Отдых получился отличный!
+            Отель с большой ухоженной территорией, внимательный обслуживающий
+            персонал. Отличный номер с видом на море.
+          </p>
+          <div class="Advantages__line-box">
+            <div class="Advantages__circle"></div>
+            <div class="Advantages__line"></div>
           </div>
         </div>
       </section>
@@ -378,6 +425,102 @@
         </div>
       </section>
     </main>
-    <footer class="Page__footer Footer"></footer>
+
+    <footer class="Page__footer Footer">
+      <div class="Footer__container">
+        <div class="Footer__about">
+          <div class="Footer__about-logo">
+            <img src="images/logo_footer.png" alt="" />
+          </div>
+          <hr />
+          <p class="Footer__about-text">
+            Кураж тур агенство,которое предоставляет услуги по поиску,
+            оформлению и подбору туров для вас и ваших родных.
+            <br /><br />
+          </p>
+          <hr />
+        </div>
+        <div class="Footer__nav">
+          <h3 class="Footer__nav-title">Навигация</h3>
+          <ul class="Footer__nav-list">
+            <li class="Footer__nav-item">
+              <a href="" class="Footer__nav-link">Главная</a>
+            </li>
+            <li class="Footer__nav-item">
+              <a href="" class="Footer__nav-link">О компании</a>
+            </li>
+            <li class="Footer__nav-item">
+              <a href="" class="Footer__nav-link">Туры</a>
+            </li>
+            <li class="Footer__nav-item">
+              <a href="" class="Footer__nav-link">Контакты</a>
+            </li>
+            <li class="Footer__nav-item">
+              <a href="" class="Footer__nav-link">Услуги</a>
+            </li>
+          </ul>
+        </div>
+        <div class="Footer__support">
+          <h3 class="Footer__support-title">Поддержка</h3>
+          <ul class="Footer__support-list">
+            <li class="Footer__support-item">
+              <a href="" class="Footer__support-link">FAQ</a>
+            </li>
+            <li class="Footer__support-item">
+              <a href="" class="Footer__support-link">Блог</a>
+            </li>
+            <li class="Footer__support-item">
+              <a href="" class="Footer__support-link">Обратная связь</a>
+            </li>
+          </ul>
+        </div>
+        <div class="Footer__contacts">
+          <h3 class="Footer__contacts-title">Контакты</h3>
+          <div class="Footer__contacts-info">
+            <a
+              href="https://maps.app.goo.gl/QNiVDepoNH4Xd8X76"
+              target="_blank"
+              class="Footer__contacts-link"
+            >
+              <img
+                class="Footer__contacts-link-map"
+                src="images/icon_map.svg"
+                alt="icon map"
+              />
+              <span class="Footer__contacts-link-text"
+                >г. Харьков, ул. Мироносицкая 10</span
+              >
+            </a>
+            <a href="tel:+380999908100" class="Footer__contacts-link">
+              <img
+                class="Footer__contacts-link-tel"
+                src="images/icon_tel.svg"
+                alt="icon phone"
+              />
+              <span class="Footer__contacts-link-text"
+                >+38 (099) 990-81-00 (viber, telegram)</span
+              >
+            </a>
+          </div>
+          <hr />
+          <div class="Footer__contacts-social">
+            <a href="/" class="Footer__contacts-link">
+              <img
+                class="Footer__contacts-link-soc"
+                src="images/icon_face.svg"
+                alt="icon facebook"
+              />
+            </a>
+            <a href="/" class="Footer__contacts-link">
+              <img
+                class="Footer__contacts-link-soc"
+                src="images/icon_insta.svg"
+                alt="icon instagram"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

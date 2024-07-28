@@ -2,10 +2,17 @@
   display: flex;
   gap: 20px;
   overflow: hidden;
+
   &__card {
     padding: 10px 20px;
     max-width: 360px;
     position: relative;
+
+    @include on-desktop {
+      padding: 16px;
+      width: 520px;
+      max-width: none;
+    }
   }
   &__arrow-left {
     position: absolute;
