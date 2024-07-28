@@ -241,10 +241,6 @@ h3 {
   }
 }
 
-.hidden {
-  display: none;
-}
-
 .Menu {
   padding-bottom: 40px;
   overflow: auto;
